@@ -1,3 +1,3 @@
 # Welcome
 
-The repository for R codes.
+The repository for R machine learning codes.
