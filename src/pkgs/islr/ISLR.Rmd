@@ -1,0 +1,28 @@
+---
+title: "ISLR"
+author: "Sanatan Das"
+date: "December 23, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r load_packages, warning=FALSE, message=FALSE, echo=FALSE}
+library(ISLR)
+library(readxl)
+library(broom)
+library(knitr)
+```
+
+```{r var1, eval=TRUE, echo=FALSE}
+
+# load the data set from excel file
+# default_rates <- read_excel("C:/view/opt/apps/git/compscix-415-1-assignments/data/peps3xx.xls")
+df <- NCI60
+write.csv(df,'NCI60.csv', row.names = FALSE)
+
+
+```
