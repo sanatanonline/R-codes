@@ -11,19 +11,18 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r load_packages, warning=FALSE, message=FALSE, echo=FALSE}
+
 library(ISLR)
 library(MASS)
 library(readxl)
 library(broom)
 library(knitr)
+
 ```
 
 ```{r var1, eval=TRUE, echo=FALSE}
 
-# load the data set from excel file
-# default_rates <- read_excel("C:/view/opt/apps/git/compscix-415-1-assignments/data/peps3xx.xls")
-df <- Advertising
-write.csv(df,'Advertising.csv', row.names = FALSE)
+#df <- Advertising
 
 
 ```
