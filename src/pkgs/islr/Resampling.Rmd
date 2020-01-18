@@ -1,0 +1,30 @@
+---
+title: "Resampling Methods"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load_packages, warning=FALSE, message=FALSE, echo=FALSE}
+
+library(ISLR)
+library(MASS)
+library(readxl)
+library(broom)
+library(knitr)
+
+```
+
+```{r var1, eval=TRUE, echo=FALSE}
+set.seed(42)
+train = sample(392 ,196)
+train
+lm.fit = lm(mpg ~ horsepower, data=Auto , subset=train)
+attach(Auto)
+m = mean((mpg - predict( lm.fit, Auto)) [-train ]^2)
+m
+
+
+```
