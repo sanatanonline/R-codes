@@ -16,13 +16,11 @@ library(ISLR)
 library(MASS)
 library(readxl)
 library(broom)
-library(knitr)
+library(EnvStats)
 
 ```
 
 ```{r var1, eval=TRUE, echo=FALSE}
 
-#df <- Advertising
-
-
+ cdfPlot(param.list = list(mean=5, sd=1), main = "")
 ```
